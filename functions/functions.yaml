@@ -1,0 +1,25 @@
+{
+  "specVersion": "v1alpha1",
+  "requiredAPIs": [],
+  "endpoints": {
+    "helloRmote": {
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "entryPoint": "helloRmote",
+      "httpsTrigger": {},
+      "serviceAccount": null,
+      "availableMemoryMb": null,
+      "maxInstances": 10,
+      "minInstances": null,
+      "concurrency": null,
+      "timeoutSeconds": null,
+      "vpc": null,
+      "labels": {},
+      "ingressSettings": null
+    }
+  },
+  "params": [],
+  "extensions": {}
+}
