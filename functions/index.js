@@ -8,6 +8,7 @@
  */
 
 const { setGlobalOptions } = require("firebase-functions");
+const { defineString } = require("firebase-functions/params");
 const { onRequest } = require("firebase-functions/https");
 const logger = require("firebase-functions/logger");
 
@@ -23,10 +24,12 @@ const logger = require("firebase-functions/logger");
 // this will be the maximum concurrent request count.
 setGlobalOptions({ maxInstances: 10 });
 
+const greeting = defineString("GREETING")
+
 // Create and deploy your first functions
 // https://firebase.google.com/docs/functions/get-started
 
 exports.helloRmote = onRequest((request, response) => {
   logger.info("Hello logs!", { structuredData: true });
-  response.send("Hello from remote source!");
+  response.send(`${greeting.value()} from remote source!`);
 });
