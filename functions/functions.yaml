@@ -20,6 +20,15 @@
       "ingressSettings": null
     }
   },
-  "params": [],
+  "params": [
+    {
+      "name": "GREETING",
+      "type": "string"
+    },
+    {
+      "name": "TIMES",
+      "type": "int"
+    }
+  ],
   "extensions": {}
 }
