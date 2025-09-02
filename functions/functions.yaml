@@ -2,7 +2,7 @@
   "specVersion": "v1alpha1",
   "requiredAPIs": [],
   "endpoints": {
-    "helloRmote": {
+    "helloRemote": {
       "platform": "gcfv2",
       "region": [
         "us-central1"
