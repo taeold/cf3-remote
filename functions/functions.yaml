@@ -7,7 +7,7 @@
       "region": [
         "us-central1"
       ],
-      "entryPoint": "helloRmote",
+      "entryPoint": "helloRemote",
       "httpsTrigger": {},
       "serviceAccount": null,
       "availableMemoryMb": null,
